@@ -132,16 +132,61 @@ Lia-Capstone/
 └── requirements.txt
 ```
 
+
 ## How to Run the Project
 
-1. Clone the GitHub repository.
-2. Create a Python virtual environment.
-3. Install the packages listed in `requirements.txt`.
-4. Obtain the `SAMPLE_INFO.tsv` dataset and place it in `data/raw/`.
-5. Open `notebooks/01_data_exploration.ipynb` in VS Code or Jupyter.
-6. Run the notebook cells from top to bottom.
+To run this project, first clone the GitHub repository:
 
-**Note:** The raw dataset is not uploaded to GitHub because of its size. The notebook requires the dataset to be available locally to run successfully.
+```bash
+git clone https://github.com/liacodes4/Lia-Capstone.git
+cd Lia-Capstone
+```
+
+Create and activate a Python virtual environment:
+
+```bash
+python3 -m venv .venv
+source .venv/bin/activate
+```
+
+Install the required packages:
+
+```bash
+python -m pip install -r requirements.txt
+python -m pip install ipykernel
+```
+
+### Required Dataset
+
+The notebook uses a file called `SAMPLE_INFO.tsv`.
+
+This file is not included in the GitHub repository because
+of its size. It needs to be obtained separately and placed
+in the following location:
+
+`data/raw/SAMPLE_INFO.tsv`
+
+The original dataset source and download instructions still
+need to be documented.
+
+### Running the Notebook
+
+1. Open the project folder in VS Code.
+2. Open `notebooks/01_data_exploration.ipynb`.
+3. Select the Python environment from `.venv`.
+4. Run the notebook cells from top to bottom.
+
+### Reproducibility Check
+
+I tested my project by cloning the repository into a
+separate folder and setting up a new Python environment.
+
+The project ran successfully after I copied the raw dataset
+into the correct folder.
+
+This showed me that the code and environment setup worked,
+but someone using my repository would still need access
+to the original dataset.
 
 ## Current Project Status
 
