@@ -191,3 +191,16 @@ to the original dataset.
 ## Current Project Status
 
 This is my week 7 capstone draft. My data cleaning, feature engineering, and model comparison are complete. I am continuing to work on connecting my current analysis to my overall research question before the final submission.
+
+
+### Cancer Category Distribution
+
+![Top 10 Pediatric Cancer Categories](images/cancer_category_distribution.png)
+
+This graph shows that some pediatric cancer categories have
+more records than others. This imbalance is one possible
+reason why my models struggle with less common categories.
+
+These counts represent records in my sample dataset, not
+the number of children diagnosed with each cancer.
+
