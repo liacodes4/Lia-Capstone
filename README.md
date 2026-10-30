@@ -93,6 +93,14 @@ My results also show that age at diagnosis, sex, and sequencing type alone are n
 
 The models are useful for testing my data pipeline and comparing different approaches, but they do not directly answer my main research question about disease burden and research attention yet.
 
+### Cancer Category Distribution
+
+![Top 10 Pediatric Cancer Categories](images/cancer_category_distribution.png)
+
+This graph shows that some pediatric cancer categories have more records than others. This imbalance is one possible reason why my models struggle with less common categories.
+
+These counts represent records in my sample dataset, not the number of children diagnosed with each cancer.
+
 ## Limitations
 
 My project still has some limitations:
@@ -122,6 +130,7 @@ Lia-Capstone/
 │   ├── raw/                    # Raw data stored locally
 │   └── processed/
 ├── images/
+│   ├── cancer_category_distribution.png
 │   └── model_comparison.png
 ├── notebooks/
 │   └── 01_data_exploration.ipynb
@@ -131,7 +140,6 @@ Lia-Capstone/
 ├── README.md
 └── requirements.txt
 ```
-
 
 ## How to Run the Project
 
@@ -160,14 +168,11 @@ python -m pip install ipykernel
 
 The notebook uses a file called `SAMPLE_INFO.tsv`.
 
-This file is not included in the GitHub repository because
-of its size. It needs to be obtained separately and placed
-in the following location:
+This file is not included in the GitHub repository because of its size. It needs to be obtained separately and placed in the following location:
 
 `data/raw/SAMPLE_INFO.tsv`
 
-The original dataset source and download instructions still
-need to be documented.
+The original dataset source and download instructions still need to be documented.
 
 ### Running the Notebook
 
@@ -178,29 +183,12 @@ need to be documented.
 
 ### Reproducibility Check
 
-I tested my project by cloning the repository into a
-separate folder and setting up a new Python environment.
+I tested my project by cloning my GitHub repository into a separate folder called `Lia-Capstone-test2`.
 
-The project ran successfully after I copied the raw dataset
-into the correct folder.
+I created a new Python environment, installed the required packages, and copied my raw dataset into the correct folder.
 
-This showed me that the code and environment setup worked,
-but someone using my repository would still need access
-to the original dataset.
+I was able to run the notebook from beginning to end without any errors. This confirmed that my project works in a new environment as long as the required dataset is available.
 
 ## Current Project Status
 
-This is my week 7 capstone draft. My data cleaning, feature engineering, and model comparison are complete. I am continuing to work on connecting my current analysis to my overall research question before the final submission.
-
-
-### Cancer Category Distribution
-
-![Top 10 Pediatric Cancer Categories](images/cancer_category_distribution.png)
-
-This graph shows that some pediatric cancer categories have
-more records than others. This imbalance is one possible
-reason why my models struggle with less common categories.
-
-These counts represent records in my sample dataset, not
-the number of children diagnosed with each cancer.
-
+This is my Week 9 capstone draft. My data cleaning, feature engineering, and model comparison are complete. I am continuing to work on connecting my current analysis to my overall research question before the final submission.
