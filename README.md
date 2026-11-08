@@ -27,9 +27,10 @@ I made the following changes:
 
 - Removed records where pediatric cancer diagnosis was listed as "Not Applicable."
 - Converted age at diagnosis from text to numerical values.
-- Filled missing ages with the median age.
 - Kept "Not Available" as a category for missing sex information.
 - Removed tissue type because all remaining records were labeled as tumor.
+- Checked for unusual ages and found 752 records with an age at diagnosis over 21. I kept these records because I couldn't confirm whether they were errors.
+- Filled missing ages using the median age from the training data to avoid using information from the testing data.
 
 After removing records without a usable cancer diagnosis category, I had **62,630 records** for modeling.
 
